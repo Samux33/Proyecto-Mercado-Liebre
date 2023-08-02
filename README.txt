@@ -1,2 +1,3 @@
-El servidor se inicia con npx nodemon app.js
-Para el diseño responsive use breackpoints diferentes para que a mi opinion la pagina este mejor distribuida
+El servidor se inicia con npx nodemon app.js(usar antes npm install)
+Para el diseño responsive use breackpoints diferentes para que la pagina 
+quede mas atractiva a la vista a mi opinion.
