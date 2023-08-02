@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #ebebeb;
+}
+h2{
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0px;
+}
+p{
+    font-size: 12px;
+}
+main{
+    width: 90%;
+    text-align: left;
+    margin: auto;
+}
+.logo{
+    display: block;
+    width: 50%;
+}
+header{
+    background-color: #EAC926;
+}
+header a{
+    color: black;
+    text-decoration: none;
+}
+.navegacion-logo{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.busqueda-container{
+    display: flex;
+    width: 45%;
+    justify-content: center;
+    padding: 0px 20px;
+}
+.navegacion-texto{
+    color: #666;
+    background-color: #ebebeb;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+    border-radius: 5px;
+    align-self: center;
+}
+#lupa{
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    border: #666 1px solid;
+    align-self: center;
+    position: relative;
+    left: 5px;
+}
+.cuotas{
+    margin: auto;
+}
+.barra{
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+}
+.site{
+    display: flex;
+    width: 50%;
+    max-width: 680px;
+    flex-direction: row;
+    align-self: start;
+    justify-content: space-around;
+    padding: 20px;
+}
+.login-navbar{
+    display: flex;
+    width: 50%;
+    max-width: 510px;
+    align-self: self-end;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-around;
+}
+.menu-burguer{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #1259c3;
+    padding: 10px;
+    margin: auto;
+    width: 30px;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+.banner{
+    display: flex;
+    width: 100%;
+    align-self: flex-end;
+}
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.producto{
+    margin-top: 10px;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 320px;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+}
+.producto-detalles{
+    display: flex;
+    position: relative;
+    text-align: center;
+    height: 15%;
+    max-width: 340px;
+    margin: auto;
+    min-width: 200px;
+}
+.imagen-container{
+    height:85%
+}
+.producto-imagen{
+    display: flex;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 20px;
+    margin: auto;
+    border-bottom: 1px solid #ebebeb;
+}
+.producto-descuento{
+    color: #39b54a;
+    font-size: 16px;
+    width: 70%;
+    position: relative;
+    right: 15px;
+}
+.producto-precio{
+    font-size: 18px;
+    width: 30%;
+}
+.icono-envio{
+    display: block;
+    width: 30px;
+    height:30px;
+    padding: 5px;
+    color: #39b54a;
+    border: solid 1px #39b54a;;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 1px;
+    top: -15px;
+    transition: all 400ms;
+}
+.icono-envio:hover{
+    transform: rotate(-90deg);
+}
+.producto-nombre{
+    display: none;
+    font-size: 16px;
+    color: #666;
+    width: 100%;
+    padding: 5px;
+}
+.footer-seccion{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    padding: 0px 20px;
+}
+.footer-texto{
+    margin: 1%;
+}
+.footer-parrafo{
+    color: #666;
+    margin: 1%;
+    text-align: center;
+}
+.copyright{
+    display: flex;
+    color: #666;
+    align-self: flex-start;
+    padding: 10px;
+}
+.footer-iconos{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: all 400ms;
+}
+.footer-iconos:hover{
+    color: rgb(0, 120, 255);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width: 768px){
+    .producto:hover{
+        .producto-nombre{
+            display: block;
+        }
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        max-width: 350px;
+        transition-duration: 400ms;
+    }
+    .producto-nombre{
+        display: none;
+    }
+    .producto-detalles{
+        width: 100%;
+        max-width: none;
+    }
+    .barra{
+        display: flex;
+    }
+    .menu-burguer{
+        display: none;
+    }
+    .cuotas,.logo,.busqueda-container{
+        width: 32vw;
+    }
+}
+@media(min-width: 1100px){
+    .producto{
+        width: 25%;
+        max-width: 250px;
+    }
+    footer{
+        flex-direction: row;
+    }
+}
